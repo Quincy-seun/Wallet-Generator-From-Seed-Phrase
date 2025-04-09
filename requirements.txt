@@ -1,0 +1,11 @@
+inquirer
+base58
+bip-utils
+solders
+pytezos
+mnemonic
+bip32utils
+web3
+bech32
+pycryptodome
+bip32
