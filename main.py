@@ -7,7 +7,14 @@ def main():
         inquirer.List(
             'wallet',
             message="Which wallet generator would you like to run?",
-            choices=['Cosmos', 'EVM', 'Mavryk', 'Solana', 'Exit'],
+            choices=[
+                'Generate New Seed Phrase',  # New option at the top
+                'Cosmos',
+                'EVM',
+                'Mavryk',
+                'Solana',
+                'Exit'
+            ],
         ),
     ]
     
@@ -18,11 +25,12 @@ def main():
         if answers['wallet'] == 'Exit':
             print("Exiting...")
             break
-        
-        print(f"Running {answers['wallet']} wallet generator...")
+
+        print(f"Running {answers['wallet']} script...")
 
         # Map the selected option to the script
         wallet_script_mapping = {
+            'Generate New Seed Phrase': 'seed.py',  # New mapping
             'Cosmos': 'cosmos.py',
             'EVM': 'evm.py',
             'Mavryk': 'mavryk.py',
