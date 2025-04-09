@@ -2,7 +2,7 @@
 _______________
 ### You can generate a specified number of EVM, Solana, Cosmos or Mavryk wallets from seed phrase using this script
 > Interactive, easy to use and highly customizable
--------------
+
 # Installation Guide [Linux/Ubuntu]
 1. Clone the repository
 ```
